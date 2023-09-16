@@ -1,0 +1,17 @@
+.CreateNewTask {
+    display: flex;
+    width: 100%;
+    position: relative;
+    border-bottom-left-radius: 10px;
+}
+
+.button {
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    background-color: var(--green-text);
+    border: none;
+    cursor: pointer;
+}
+

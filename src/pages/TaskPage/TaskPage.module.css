@@ -1,0 +1,15 @@
+.TaskPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.title {
+    font-size: 50px;
+    color: var(--gray-text-main);
+    font-weight: 300;
+}

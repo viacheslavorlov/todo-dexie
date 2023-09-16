@@ -1,0 +1,12 @@
+.TaskList {
+    display: grid;
+    gap: 0;
+    width: 100%;
+    border-spacing: 0;
+}
+
+.TaskList:first-child {
+    border-top: 2px var(--gray-text-main) solid;
+}
+
+

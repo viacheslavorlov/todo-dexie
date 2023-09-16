@@ -1,0 +1,16 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+    /*переменные*/
+    --gray-bg: #f3f3f3;
+    --gray-text-main: #8c8181;
+    --gray-medium: rgba(140, 129, 129, 0.69);
+    --green-text: #129353;
+    --white-bg: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

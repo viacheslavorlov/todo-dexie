@@ -1,0 +1,16 @@
+.Task {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 5px;
+    background-color: var(--white-bg);
+    gap: 10px;
+    border: 1px var(--gray-text-main) solid;
+}
+
+.done {
+    text-decoration: line-through;
+    color: var(--gray-medium);
+}
