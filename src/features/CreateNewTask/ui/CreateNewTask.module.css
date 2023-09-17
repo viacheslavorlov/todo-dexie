@@ -6,7 +6,11 @@
 }
 
 .input {
-    padding-right: 100px;
+    width: 100%;
+    padding: 0 100px 0 5px;
+    font-size: 20px;
+    height: 40px;
+    border: 1px solid var(--gray-text-main);
 }
 
 .button {

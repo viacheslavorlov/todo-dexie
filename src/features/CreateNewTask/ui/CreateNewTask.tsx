@@ -1,8 +1,6 @@
-
 import { memo, useEffect, useRef, KeyboardEvent } from 'react';
 import { db } from '../../../db';
 import { classNames } from '../../../shared/lib/classNames/classNames';
-import { Input } from '../../../shared/ui/Input';
 import cls from './CreateNewTask.module.css';
 
 interface CreateNewTaskProps {
@@ -61,7 +59,7 @@ export const CreateNewTask = memo((props: CreateNewTaskProps) => {
 
     return (
         <div className={classNames(cls.CreateNewTask, className)}>
-            <Input
+            <input
                 placeholder={'Whats need to be done?'}
                 ref={inputRef}
                 className={cls.input}

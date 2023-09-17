@@ -1,7 +1,7 @@
 import {useLiveQuery} from 'dexie-react-hooks';
 import {memo, ReducerWithoutAction, useReducer} from 'react';
 import {db} from '../../../db';
-import {FilterTasks, FilterType} from '../../../entities/FilterTasks/ui/FilterTasks';
+import {FilterTasks, FilterType} from '../../../entities/FilterTasks';
 import {TaskList} from '../../../entities/Task';
 import {CreateNewTask} from '../../../features/CreateNewTask';
 import {classNames} from '../../../shared/lib/classNames/classNames';
@@ -42,15 +42,7 @@ export const TaskPage = memo((props: TaskPageProps) => {
     } = props;
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
-    const [
-        state,
-        dispatch
-    ] = useReducer<
-            (state: StateInterface, action: ActionType) => StateInterface,
-            ReducerWithoutAction<StateInterface>,
-            () => StateInterface
-        >(filterReducer, initialState, init);
-
+    const [state, dispatch] = useReducer<(state: StateInterface, action: ActionType) => StateInterface, ReducerWithoutAction<StateInterface>, () => StateInterface>(filterReducer, initialState, init);
     const tasks = useLiveQuery(() => db.todos?.toArray());
 
     return (
@@ -59,8 +51,16 @@ export const TaskPage = memo((props: TaskPageProps) => {
             <CreateNewTask/>
             {tasks?.length ? (
                     <>
-                        <TaskList filter={state.filter} tasks={tasks}/>
-                        <FilterTasks state={state} tasksCount={tasks?.length} dispatch={dispatch}/>
+                        <TaskList
+                            /* @ts-ignore*/
+                            filter={state.filter}
+                            tasks={tasks}
+                        />
+                        <FilterTasks
+                            state={state}
+                            tasksCount={tasks?.length}
+                            dispatch={dispatch}
+                        />
                     </>
                 )
                 : <h1 data-testid={'no-tasks'}>Нет задач</h1>}
