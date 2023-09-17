@@ -32,8 +32,10 @@
     border: none;
     background: none;
     cursor: pointer;
+    padding: 5px;
 }
 
 .active {
     border: 1px solid var(--gray-medium);
+
 }
