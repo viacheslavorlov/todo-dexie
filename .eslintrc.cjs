@@ -14,6 +14,5 @@ module.exports = {
 			'warn',
 			{allowConstantExport: true},
 		],
-		'ban-ts-comment': 'warn'
 	},
 };

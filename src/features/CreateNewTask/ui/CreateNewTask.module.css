@@ -5,6 +5,10 @@
     border-bottom-left-radius: 10px;
 }
 
+.input {
+    padding-right: 100px;
+}
+
 .button {
     width: 100px;
     height: 40px;

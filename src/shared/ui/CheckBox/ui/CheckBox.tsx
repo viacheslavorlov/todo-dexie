@@ -19,7 +19,7 @@ export const CheckBox = memo((props: CheckBoxProps) => {
 
     return (
         <label className={classNames(cls.CustomCheckbox, className)}>
-            <input onChange={onChangeHandler} type="checkbox" checked={checked}/>
+            <input data-testid={'checkbox'} onChange={onChangeHandler} type="checkbox" checked={checked}/>
             <span className={cls.checkmark}></span>
         </label>
     );

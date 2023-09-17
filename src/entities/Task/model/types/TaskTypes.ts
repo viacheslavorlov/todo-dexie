@@ -4,4 +4,3 @@ export interface TaskType {
     id: number;
 }
 
-export type TaskList = TaskType[];
