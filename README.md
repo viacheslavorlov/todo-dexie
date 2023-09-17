@@ -1,6 +1,7 @@
 # ToDo-dexie
-[![Netlify Status](https://api.netlify.com/api/v1/badges/fbd87a26-512f-4805-8242-29b4f8bed02c/status.svg)](https://app.netlify.com/sites/fbd87a26-512f-4805-8242-29b4f8bed02c)
-[Netlify (DEPLOY)](https://main--chimerical-nasturtium-a69d0c.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fbd87a26-512f-4805-8242-29b4f8bed02c/deploy-status)](https://main--chimerical-nasturtium-a69d0c.netlify.app/)
+
+## [Netlify (DEPLOY)](https://main--chimerical-nasturtium-a69d0c.netlify.app/)
 
 стек: React + TypeScript + Vite + dexie.js (библиотека для работы с IndexedDB)
 
